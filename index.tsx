@@ -1,11 +1,9 @@
 import * as b from "bobril";
-import { StateClass } from "./src/stateClass";
-import { TestPage } from "./pages/testPage";
+import { HooksPage } from "./pages/hooksPage";
 
-const defaultRoute = { handler: () => <TestPage /> };
+const defaultRoute = { handler: () => <HooksPage /> };
 
 b.routes([
-  b.route({ url: "/state", ...defaultRoute }),
-  b.route({ handler: () => <StateClass />, url: "/stateClass" }),
+  b.route({ url: "/hooks", ...defaultRoute }),
   b.routeDefault(defaultRoute),
 ]);

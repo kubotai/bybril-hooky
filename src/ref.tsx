@@ -1,5 +1,4 @@
 import * as b from "bobril";
-import { INotificationManager } from "../src/notificationManager";
 
 export function Ref(): b.IBobrilNode {
   const [value, setValue] = b.useState("");

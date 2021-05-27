@@ -8,7 +8,7 @@ import { Effect1 } from "../src/effect1";
 import { Context } from "../src/context";
 import { Memo } from "../src/memo";
 
-export function TestPage(): b.IBobrilNode {
+export function HooksPage(): b.IBobrilNode {
   const [comp, setComp] =
     b.useState<undefined | (() => b.IBobrilNode)>(undefined);
 
