@@ -7,6 +7,7 @@ import { StateClass } from "../src/stateClass";
 import { Effect1 } from "../src/effect1";
 import { Context } from "../src/context";
 import { Memo } from "../src/memo";
+import { ReducerComp } from "../src/reducer";
 
 export function HooksPage(): b.IBobrilNode {
   const [comp, setComp] =
@@ -15,7 +16,7 @@ export function HooksPage(): b.IBobrilNode {
   return (
     <>
       <button onClick={() => setComp(() => <State />)}>State</button>
-      <button onClick={() => setComp(() => <StateClass />)}>State class</button>
+      {/* <button onClick={() => setComp(() => <StateClass />)}>State class</button> */}
       <button onClick={() => setComp(() => <Ref />)}>Ref</button>
       <button onClick={() => setComp(() => <Effect1 />)}>Effect1</button>
       <button
@@ -27,6 +28,7 @@ export function HooksPage(): b.IBobrilNode {
       </button>
       <button onClick={() => setComp(() => <Context />)}>Context</button>
       <button onClick={() => setComp(() => <Memo />)}>Memo</button>
+      <button onClick={() => setComp(() => <ReducerComp />)}>Reducer</button>
       <hr />
       {comp}
     </>
